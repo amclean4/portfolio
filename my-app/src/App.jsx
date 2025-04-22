@@ -1,5 +1,5 @@
 import Navbar from './components/Navbar';
-import ProjectCard from './components/ProjectCard';
+import ProjectCard, { ContactForm } from './components/ProjectCard';
 
 function App() {
   return (
@@ -24,7 +24,6 @@ function App() {
         </div>
       </section>
 
-      
       {/* PROJECTS */}
       <section id="projects" className="min-h-screen pt-24 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
@@ -42,9 +41,7 @@ function App() {
           <p className="text-gray-600 text-lg max-w-xl mx-auto mb-6">
             Looking to collaborate, chat UX, or bring an idea to life? I’d love to hear from you.
           </p>
-          <a href="mailto:4amclean@gmail.com" className="inline-block bg-blue-500 text-white px-6 py-3 rounded-xl hover:bg-blue-600 transition">
-            Send an Email
-          </a>
+          <ContactForm />
         </div>
       </section>
     </div>
